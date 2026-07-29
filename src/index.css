@@ -1,1 +1,87 @@
 @import "tailwindcss";
+
+@theme {
+  --font-ar: 'Tajawal', sans-serif;
+  --font-heading-ltr: 'Cormorant Garamond', Georgia, serif;
+  --font-body-ltr: 'Inter', sans-serif;
+
+  --color-raw-linen: #F2EDE4;
+  --color-terracotta: #A0522D;
+  --color-terracotta-hover: #864121;
+  --color-warm-black: #1C1C1C;
+  --color-muted-gold: #C4922A;
+  --color-soft-sand: #E8DDD0;
+  --color-whatsapp-green: #25D366;
+}
+
+:root {
+  --raw-linen: #F2EDE4;
+  --terracotta: #A0522D;
+  --terracotta-hover: #864121;
+  --warm-black: #1C1C1C;
+  --muted-gold: #C4922A;
+  --soft-sand: #E8DDD0;
+  --whatsapp-green: #25D366;
+  --font-ar: 'Tajawal', sans-serif;
+  --font-heading-ltr: 'Cormorant Garamond', Georgia, serif;
+  --font-body-ltr: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--raw-linen);
+  color: var(--warm-black);
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-ar);
+  background-color: var(--raw-linen);
+  color: var(--warm-black);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-ar);
+}
+
+html[dir="ltr"] body {
+  font-family: var(--font-body-ltr);
+}
+
+.font-heading {
+  font-family: var(--font-ar);
+  font-weight: 700;
+  font-style: normal;
+}
+
+html[dir="ltr"] .font-heading {
+  font-family: var(--font-heading-ltr);
+  font-style: italic;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 769px) {
+  section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
