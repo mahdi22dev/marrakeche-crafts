@@ -1,6 +1,5 @@
 {
   "name": "Marrakeche Crafts",
   "description": "Bilingual landing page for a Moroccan artisan home decor brand featuring handcrafted pieces, WhatsApp ordering, and interactive 3-way language support.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "requestFramePermissions": []
 }
